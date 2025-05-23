@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "styleless",
+  "version": "0.0.0",
+  "description": "On styleless, white text websites, this saves you from getting flashbanged",
+  "permissions": ["scripting"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["styleless.js"],
+    "run_at": "document_idle"
+  }]
+}
